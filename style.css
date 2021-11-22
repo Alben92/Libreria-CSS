@@ -83,6 +83,7 @@ h2{
     display: block;
     float:left;
     position: relative;
+    box-shadow: 4px 4px 4px #000000;
 }
 
 @media screen and (max-width: 800px){

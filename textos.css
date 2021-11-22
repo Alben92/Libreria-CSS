@@ -1,0 +1,235 @@
+/* ============================ANIMACIONES Display LOADERS============================ */
+
+/* PRIMER */
+.BotonesFlechas{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: -15px;
+    height: 130%;
+}
+
+.FlechaArriba{
+	position: absolute;
+	border: 0;
+	background: none;
+	top: 0;
+}
+
+.FlechaDerecha{
+	position: absolute;
+	border: 0;
+	background: none;
+	height: 30%;
+	bottom: 35%;
+	right: 2%;
+}
+
+.FlechaAbajo{
+	position: absolute;
+	border: 0;
+	background: none;
+	bottom: 0;
+}
+
+.FlechaIzquierda{
+	position: absolute;
+	border: 0;
+	background: none;
+	height: 30%;
+	bottom: 35%;
+	left: 2%;
+}
+
+
+.buttonUp {
+    border-left: 1px solid #bdc3c7;
+    border-top: 1px solid #bdc3c7;
+    transform: translateY(25%) rotate(45deg);
+    background-color: transparent;
+    height: 12px;
+    width: 12px;
+    padding: 10px;
+}
+
+.buttonRight {
+    border-right: 1px solid#bdc3c7;
+    border-top: 1px solid #bdc3c7;
+    transform: translateX(-25%) rotate(45deg);
+    background-color: transparent;
+    height: 12px;
+    width: 12px;
+    padding: 10px;
+}
+
+.buttonDown {
+    border-bottom: 1px solid #bdc3c7;
+    border-right: 1px solid #bdc3c7;
+    transform: translateY(-25%) rotate(45deg);
+    background-color: transparent;
+    height: 12px;
+    width: 12px;
+    padding: 10px;
+}
+
+.buttonLeft {
+    border-bottom: 1px solid #bdc3c7;
+    border-left: 1px solid #bdc3c7;
+    transform: translateX(25%) rotate(45deg);
+    background-color: transparent;
+    height: 12px;
+    width: 12px;
+    padding: 10px;
+}
+
+.buttonUp:hover{
+	border-left: 3px solid rgb(52,152,219);
+    border-top: 3px solid rgb(52,152,219);
+}
+
+.buttonRight:hover{
+	border-right:3px solid rgb(52,152,219);
+    border-top: 3px solid rgb(52,152,219);
+}
+
+.buttonDown:hover{
+	border-bottom: 3px solid rgb(52,152,219);
+    border-right: 3px solid rgb(52,152,219);	
+}
+
+.buttonLeft:hover{
+	border-bottom: 3px solid rgb(52,152,219);
+    border-left: 3px solid rgb(52,152,219);
+}
+
+
+/* SEGUNDO */
+.barras{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.barraBorde{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #ffffff;
+	height: 10px;
+	padding: 5px;
+}
+
+.BarraGris1, .BarraGris2, .BarraGris3{
+	width: 40%;
+	border-radius: 5px;
+	background: #bdc3c7;
+	height: 100%;
+}
+
+.barraBorde:hover .BarraGris1{
+	width: 80%;
+	transition: 0.5s ease-in;
+	background: rgb(52,152,219);
+}
+
+.barraBorde:hover .BarraGris2{
+	width: 90%;
+	transition: 0.2s ease;
+	background: rgb(52,152,219);
+}
+
+.barraBorde:hover .BarraGris3{
+	width: 50%;
+	transition: .8s linear;
+	background: rgb(52,152,219);
+}
+
+
+/* TERCERO */
+.ratingStar{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Filastar{
+	background: none;
+	border: none;
+	color: #bdc3c7;
+	padding: 0;
+	font-size: 42px;
+}
+
+.Filastar:focus{
+	color: rgb(52,152,219);
+}
+
+.Filastar:hover{
+	color: rgb(52,152,219);
+	transition: .2s linear;
+}
+
+/* CUARTO */
+.circuloGrafica{
+	width: 100%;
+	height: 140%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -20px;
+}
+
+.graficaColor{
+	width: 130px;
+	height: 130px;
+	background: #bdc3c7; 
+	position: relative;
+	border-radius: 100%;
+	
+}
+
+.graficaColor:after{
+	width: 130px;
+	height: 130px;
+	background: #ffffff content-box; 
+	position: absolute;
+	content: '50%';
+	font-size: 32px;
+	line-height: 3;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	padding: 15px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.graficaColor:before{
+	width: 130px;
+	height: 130px;
+	transform: rotate(0deg);
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	padding: 15px;
+	box-sizing: border-box;
+	transition: 1s ease;
+	background: transparent; 
+	opacity: 0;	
+}
+
+.graficaColor:hover::before{	
+	transform: rotate(90deg);
+	opacity: 1;
+	transition: .5s ease;
+	background: linear-gradient(rgb(52,152,219) 50%, transparent 51%); 
+}
